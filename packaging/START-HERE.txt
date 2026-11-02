@@ -1,0 +1,64 @@
+FocusTrack 1.2.2 - Windows x64
+=============================
+
+QUICK START ON ANOTHER PC
+1. Copy the ZIP to a Windows 10/11 x64 PC.
+2. Extract the ENTIRE ZIP to a permanent folder, such as Documents\FocusTrack.
+3. Double-click focustrack.exe. Do not run it from inside the ZIP.
+4. The app starts quietly. Open the hidden-icons area beside the Windows clock
+   and select the FocusTrack double-check icon to open the dashboard.
+
+Flutter, Dart and Visual Studio are NOT required. The Flutter runtime and
+Microsoft Visual C++ runtime DLLs are included beside the executable.
+Keep the data folder and all DLLs with focustrack.exe. No internet is needed.
+This is a portable, unsigned app, not a Microsoft Store or signed installer.
+It does not request administrator access.
+
+UPGRADING FROM DAYMARK
+- First choose Quit Daymark from its tray icon. Closing its dashboard is not Quit.
+- Launch focustrack.exe from this package.
+- Existing activity notes, tasks, interval and the previous-save backup are
+  copied from %APPDATA%\Daymark to %APPDATA%\FocusTrack automatically.
+- The original Daymark data is left intact. Existing FocusTrack data is never
+  overwritten by migration. Quit/disable the old app before using the new one.
+- An enabled Daymark startup entry is replaced by FocusTrack's startup entry.
+- Launching a second instance explains that the existing one must be quit first.
+
+USING FOCUSTRACK
+- Preferences: choose 10, 30, 45, or 60 minutes, or apply a custom 1-1440 minutes.
+  The default is 60 minutes. Applying a setting restarts the countdown.
+- The bottom-right prompt appears above the taskbar. Log saves your note, then
+  shows your checklist. Check tasks to strike them out; each change saves.
+  Done closes the checklist. Skip or X on the activity form saves no activity.
+- The checklist does not delay or reset the next scheduled prompt.
+- Closing/minimizing the dashboard hides it; the app continues in the tray.
+- Daily reports lets you view JSON and copy the day's work as text or JSON.
+- Start with Windows is enabled on first launch; change this in Preferences.
+
+YOUR DATA AND BACKUPS
+Data lives in %APPDATA%\FocusTrack\focustrack.json, separately from this folder.
+The .bak file contains the previous successful save. Damaged files are preserved.
+Use Preferences > Open data folder to find the files. They are local plaintext.
+
+To move YOUR notes to a second PC: quit FocusTrack on both PCs, back up both data
+folders, and copy your FocusTrack data folder to %APPDATA% on the new PC. Do not
+replace a destination folder containing work you want to retain.
+No personal notes or settings are included in this distribution ZIP.
+
+MOVING OR REMOVING THE APP
+Keep the extracted folder in one place. If you move it, launch from the new
+location to refresh an enabled startup entry. To remove it, turn off Start with
+Windows, quit via the tray, and delete the app folder. Your notes remain in
+%APPDATA%\FocusTrack until you separately remove them.
+
+VALIDATION AND LIMITS
+- Windows x64 release compiled with Flutter 3.47.7 / Visual Studio 2026.
+- 11 automated tests passed; static analysis reported no issues.
+- Rendered dashboard, preferences and both popups were inspected, including
+  a 760px-wide window and 125% text scaling.
+- Runtime dependencies are bundled and archive contents/hash checked.
+- Not tested on a separate clean physical PC, ARM PC, or Windows Server.
+- The app is unsigned. Follow your organization's software policies.
+
+Third-party notices: FLUTTER-LICENSES.md, MATERIAL-ICONS-LICENSE.txt,
+THIRD-PARTY-NOTICES.txt and data\flutter_assets\NOTICES.Z.

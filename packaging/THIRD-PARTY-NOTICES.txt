@@ -1,0 +1,12 @@
+Third-party components
+
+Flutter engine and Dart: see FLUTTER-LICENSES.md.
+Flutter packages: see data\flutter_assets\NOTICES.Z (compressed notices).
+Material Icons: see MATERIAL-ICONS-LICENSE.txt.
+Microsoft Visual C++ runtime DLLs: copyright Microsoft Corporation; distributed
+as application-local release runtime components from the Visual Studio Redist
+folder. These components retain their original Microsoft digital signatures.
+https://learn.microsoft.com/cpp/windows/redistributing-visual-cpp-files
+https://docs.flutter.dev/platform-integration/windows/building
+
+The application uses fonts provided by Windows; no Windows font files are bundled.
